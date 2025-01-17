@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="New Demo Suite File">
 
-    <test name="Login to SwagLabs With Valid Credientials">
+    <test name="verify User Can Add Random Product Successfully And Create An Order">
         <classes>
             <class name="testcases.TC02_Products">
                 <methods>
-                    <include name="verifyUserCanAddProductSuccessfully_P"/>
+                    <include name="verifyUserCanAddRandomProductSuccessfully_P"/>
                 </methods>
             </class>
         </classes>

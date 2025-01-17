@@ -12,15 +12,15 @@ import static drivers.DriverHolder.getDriver;
 public class PageBase {
     WebDriver driver;
 
-    public PageBase(WebDriver driver){
-        this.driver=driver;
+    public PageBase(WebDriver driver) {
+        this.driver = driver;
     }
 
     public static void hoverWebElement(WebDriver driver, WebElement element) {
         //Creating object of an Actions class
         Actions action = new Actions(getDriver());
 
-//Performing the mouse hover action on the target element.
+        //Performing the mouse hover action on the target element.
         action.moveToElement(element).perform();
     }
 
