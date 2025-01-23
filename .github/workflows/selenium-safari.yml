@@ -25,14 +25,11 @@ jobs:
         run: |
           sudo safaridriver --enable
 
-      - name: Verify safaridriver is available
+      - name: Verify safaridriver
         run: |
           safaridriver --version
-
-      - name: Check safaridriver PATH
-        run: |
           which safaridriver
 
       - name: Run Selenium Tests
         run: |
-          mvn clean test -Dbrowsername=safari
+          mvn clean test -Dbrowsername=safari -Dselenium.log.level=DEBUG
