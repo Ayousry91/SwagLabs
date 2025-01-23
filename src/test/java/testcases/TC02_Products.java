@@ -39,6 +39,7 @@ public class TC02_Products extends TestBase {
         new P02_ProductsPage(getDriver()).clickONCART_BUTTON();
 
         //TODO: ON the Cart page Click on CHECKOUT BUTTON
+        Thread.sleep(2000);
         new P03_CartPage(getDriver()).clickONCHECKOUTBUTTON();
 
         //TODO: ON checkout-step-one, enter random data in (firstname, lastname, zipcode) fields and click on Continue button
