@@ -23,13 +23,19 @@ jobs:
 
       - name: Enable Safari WebDriver
         run: |
+          defaults write com.apple.Safari IncludeDevelopMenu YES
+          defaults write com.apple.Safari AllowRemoteAutomation 1
           sudo safaridriver --enable
+          safaridriver -p 0 &
 
-      - name: Verify safaridriver
+      - name: Verify safaridriver is available
         run: |
           safaridriver --version
+
+      - name: Check safaridriver PATH
+        run: |
           which safaridriver
 
       - name: Run Selenium Tests
         run: |
-          mvn clean test -Dbrowsername=safari -Dselenium.log.level=DEBUG
+          mvn clean test -Dbrowsername=safari
