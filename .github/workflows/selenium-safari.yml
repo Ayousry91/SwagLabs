@@ -18,7 +18,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '15' # Match your project's Java version
+          java-version: '11' # Match your project's Java version
           distribution: 'temurin'
 
       - name: Install Safari WebDriver
