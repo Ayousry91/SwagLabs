@@ -27,4 +27,4 @@ jobs:
 
       - name: Run Selenium Tests
         run: |
-          mvn clean test -Dbrowser=safari
+          mvn clean test -Dbrowsername=safari

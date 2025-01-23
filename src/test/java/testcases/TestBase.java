@@ -21,7 +21,7 @@ public class TestBase {
     @Parameters("browsername")
     @BeforeTest
     public void OpenBrower(@Optional String browsername) {
-        setDriver(DriverFactory.getNewInstance(""));
+        setDriver(DriverFactory.getNewInstance(browsername));
 
         getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
