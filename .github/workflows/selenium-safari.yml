@@ -23,7 +23,7 @@ jobs:
 
       - name: Enable Safari WebDriver
         run: |
-          safaridriver --enable
+          sudo safaridriver --enable
 
       - name: Run Selenium Tests
         run: |
