@@ -29,6 +29,10 @@ jobs:
         run: |
           safaridriver --version
 
+      - name: Check safaridriver PATH
+        run: |
+          which safaridriver
+
       - name: Run Selenium Tests
         run: |
           mvn clean test -Dbrowsername=safari
