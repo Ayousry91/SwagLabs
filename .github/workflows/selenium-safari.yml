@@ -21,9 +21,9 @@ jobs:
           java-version: '11' # Match your project's Java version
           distribution: 'temurin'
 
-      - name: Install Safari WebDriver
+      - name: Enable Safari WebDriver
         run: |
-          brew install --cask safari-driver
+          safaridriver --enable
 
       - name: Run Selenium Tests
         run: |
